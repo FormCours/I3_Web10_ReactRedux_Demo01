@@ -1,0 +1,13 @@
+1) Installer le necessaire pour redux
+    - redux         (Le store)
+    - react-redux   (Le lien entre react et redux)
+
+    => npm install redux react-redux
+
+2) Preparer la structure du projet (customisable)
+   Le choix de la structure est la suivante :
+    - store
+         > actions      (Les différents interactions)
+         > reducers     (Les resolveurs d'interactions)
+         store.js       (Configuration pour créer le store)
+
