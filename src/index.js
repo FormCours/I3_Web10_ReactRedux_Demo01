@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import necessaire pour redux
+import { Provider } from 'react-redux';
+import store from './store/store';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* Permet de diffuser le store */}
+    <Provider store={store}>  
+      <App />   {/* ← Notre application */}
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

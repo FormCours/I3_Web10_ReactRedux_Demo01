@@ -11,3 +11,16 @@
          > reducers     (Les resolveurs d'interactions)
          store.js       (Configuration pour créer le store)
 
+3) Définition du store avec les premieres interactions
+    a) Définition des actions possibles
+        - Les constantes
+        - Les méthodes qui génére les objets "action"
+    b) Définition du resolveurs des actions
+        - Le state initial
+        - La méthode "reducer"
+    c) Configuration du store
+        - On combine les reducers ensembles
+        - On créer le store (qui sera exporté)
+
+4) Diffusion du store dans l'app -> Via le fichier "index.js" de React
+
