@@ -24,3 +24,5 @@
 
 4) Diffusion du store dans l'app -> Via le fichier "index.js" de React
 
+5) Créer des composants qui utilise le store
+
