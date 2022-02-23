@@ -1,21 +1,25 @@
 import { useDispatch } from "react-redux";
 import { decrement, increment } from './../../store/actions/counter-action';
 
-const CounterAction = () => {
+const CounterAction = ({step}) => {
 
     const dispatch = useDispatch();
 
     const handleUp = () => {
-        dispatch(increment(1))
+        dispatch(increment(step))
     }
 
     return (
         <div>
-            <button onClick={handleUp}>+1</button>
+            <button onClick={handleUp}>+{step}</button>
             {' '}
-            <button onClick={() => dispatch(decrement(1))}>-1</button>
+            <button onClick={() => dispatch(decrement(step))}>-{step}</button>
         </div>
     );
+};
+
+CounterAction.defaultProps = {
+    step: 1
 };
 
 export default CounterAction;
