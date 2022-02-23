@@ -22,7 +22,20 @@
         - On combine les reducers ensembles
         - On créer le store (qui sera exporté)
 
-4) Diffusion du store dans l'app -> Via le fichier "index.js" de React
+4) Diffusion du store dans l'app
+    Généralement, dans le fichier "index.js" de React:
+        - Importer le store précédement créé.
+        - Ajout le composant "Provider" qui permet de difuser le store.
 
 5) Créer des composants qui utilise le store
+    (Choix personnel) Les composants lier au store sont dans le dossier :
+        - containers
+        - pages (Si le routing est présent)
+    Les composants dans le dossier "components" ne sont pas connecté au store.
 
+    Pour qu'un composant puisse utiliser le store, il est possible d'utiliser
+    les hooks fournit par "React-Redux".
+        - useSelector => Permet de récuperer les données du store.
+        - useDispatch => Permet d'envoyer des actions au dispatcher de redux.
+
+    Note : Il est possible d'utiliser "l'ancienne technique" via le HOC "Connect"
