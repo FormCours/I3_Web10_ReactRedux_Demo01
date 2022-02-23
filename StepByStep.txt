@@ -28,9 +28,9 @@
         - Ajout le composant "Provider" qui permet de difuser le store.
 
 5) Créer des composants qui utilise le store
-    (Choix personnel) Les composants lier au store sont dans le dossier :
+    (Choix personnel) Les composants lier au store sont dans les dossiers suivants :
         - containers
-        - pages (Si le routing est présent)
+        - pages (Si le routing a été installer dans le projet)
     Les composants dans le dossier "components" ne sont pas connecté au store.
 
     Pour qu'un composant puisse utiliser le store, il est possible d'utiliser
